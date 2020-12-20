@@ -14,7 +14,6 @@ const App = () => {
         <SideContent/>
         <RightContent/>
       </div>
-      <Footer/>
     </main>
   )
 };

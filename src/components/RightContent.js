@@ -1,8 +1,9 @@
 import React from 'react';
-import { FaBriefcase } from 'react-icons/fa'
+import { FaBriefcase, FaUserGraduate } from 'react-icons/fa'
 
 // local import
-import { workExperience } from '../data';
+import { workExperience,educations } from '../data';
+import RightContentMid from './RightContentMid';
 
 const RightContent = () => {
   return (
@@ -13,25 +14,20 @@ const RightContent = () => {
         </div>
         <div className="work-container">
           {workExperience.map((work, index) => {
-            const { occupation, duration, icon } = work;
-            return (
-              <div key={index}>
-                <p>{occupation}</p>
-                <div className="flex-item">
-                  <div className="flex">
-                    <i>{icon}</i>
-                  </div>
-                  <div className="flex">
-                    <span>{duration}</span>
-                  </div>
-                </div>
-              </div>
-            )
+            return <RightContentMid {...work} key={index}/>
           })}
         </div>
       </div>
       <div className="right-content">
-        hello
+        <div className="title">
+          <i><FaUserGraduate /></i><span>Education</span>
+        </div>
+        <div className="work-container">
+          {educations.map((education, index) => {
+            const { about, duration, icon } = education;
+            return <RightContentMid key={index} occupation={about} duration={duration} icon={icon}/>
+          })}
+        </div>
       </div>
     </div>
 

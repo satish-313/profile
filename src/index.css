@@ -74,7 +74,16 @@ a{
 nav {
   background-color: var(--clr-green-light);
   margin-bottom: 1rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+nav h3 {
+  font-size: 2rem;
+  color: var(--clr-white);
+}
+
 
 .section {
   display: grid;
@@ -119,6 +128,10 @@ nav {
   font-size: 1rem;
   margin-left: 1rem;
 }
+.left-flex a{
+  font-size: 1rem;
+  margin-left: 1rem;
+}
 .info{
   display: flex;
   justify-content: star;
@@ -136,6 +149,17 @@ nav {
 .skill {
   margin: 1rem;
 }
+.skill-log .left-flex-item {
+  display: flex;
+}
+.skill-log .left-flex-item .left-flex {
+  align-self: center;
+}
+.skill-log .left-flex-item .left-flex img{
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
 .title {
   display: flex;
   justify-content: start;
@@ -150,30 +174,7 @@ nav {
   font-weight: bold;
   margin-left: 1rem;
 }
-.skill-log img {
-  height: 40px;
-  width: 40px;
-  object-fit: contain;
-}
-.set ,.database {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.set span{
-  font-size: 1rem;
-  margin-left: 10px;
-}
-.database i {
-  padding-left: 10px;
-  font-size: 1.75rem;
-  color: var(--clr-primary-3);
-}
-.database span{
-  font-size: 1.25rem;
-  margin-left: 10px;
-}
+
 
 .language{
   margin: 1rem;
@@ -184,6 +185,7 @@ nav {
 
 /* right content */
 .right-content{
+  margin-bottom: 1rem;
   box-shadow: var(--card);
   padding: 1rem;
 }
