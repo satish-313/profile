@@ -1,6 +1,9 @@
-import React from 'react';
+import React,{useState} from 'react';
 
-const RightContentMid = ({occupation,icon,duration}) => {
+import Projects from './Projects';
+
+const RightContentMid = ({occupation,icon,duration,institute,project}) => {
+
   return (
     <div>
       <p>{occupation}</p>
@@ -12,6 +15,9 @@ const RightContentMid = ({occupation,icon,duration}) => {
           <span>{duration}</span>
         </div>
       </div>
+      {institute && <h3>{institute}</h3>}
+      {project && <Projects project={project}/>}
+      <hr/>
     </div>
   )
 }

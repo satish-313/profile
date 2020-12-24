@@ -22,10 +22,10 @@ const RightContent = () => {
         <div className="title">
           <i><FaUserGraduate /></i><span>Education</span>
         </div>
-        <div className="work-container">
+        <div className="education-container">
           {educations.map((education, index) => {
-            const { about, duration, icon } = education;
-            return <RightContentMid key={index} occupation={about} duration={duration} icon={icon}/>
+            const { about, duration, icon,institute } = education;
+            return <RightContentMid key={index} occupation={about} duration={duration} icon={icon} institute={institute}/>
           })}
         </div>
       </div>

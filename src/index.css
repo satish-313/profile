@@ -107,7 +107,7 @@ nav h3 {
   position: absolute;
   bottom: 15px;
   left: 15px;
-  color: var(--clr-white);
+  color: var(--clr-dark);
 }
 
 .about-me {
@@ -149,16 +149,49 @@ nav h3 {
 .skill {
   margin: 1rem;
 }
+.skill-log {
+  display: flex;
+  flex-direction: column;
+}
 .skill-log .left-flex-item {
   display: flex;
+  justify-content: start;
+  align-items: center;
 }
-.skill-log .left-flex-item .left-flex {
-  align-self: center;
-}
+
 .skill-log .left-flex-item .left-flex img{
   height: 40px;
   width: 40px;
   object-fit: contain;
+}
+.skill-log .left-flex-item button{
+  margin-left: 1.5rem;
+  color:var(--clr-white);
+  border:transparent;
+  border-color: transparent;
+  background-color: var(--clear-pink);
+  font-size: 1.25rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.skill-log .left-flex-item button:focus{
+  outline: none;
+}
+.framework{
+  height: 2rem;
+  background-color: var(--clr-primary-8);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.framework:hover{
+  background-color: var(--clr-primary-5);
+}
+.framework img{
+  height: 80%;
+  object-fit: contain;
+  border-radius: var(--radius);
+  margin: 0 1rem;
 }
 .title {
   display: flex;
@@ -198,7 +231,6 @@ nav h3 {
 }
 .work-container p{
   font-size: 1.25rem;
-  
 }
 .flex-item{
   display: flex;
@@ -215,9 +247,50 @@ nav h3 {
   font-size: 1.25rem;
   margin-left: 1rem;
 }
+.education-container p{
+  font-size: 1.25rem;
+}
+.education-container h3{
+  margin-top:-1rem ;
+}
+
+.project-name button{
+  margin: 0 1rem;
+  cursor: pointer;
+  background-color: var(--clr-primary-5);
+  border: transparent;
+  border-color: transparent;
+  padding: 10px;
+  border-radius: var(--radius);
+  color: var(--clr-white);
+  font-size: 1rem;
+}
+.project-name button:hover{
+  background-color: var(--clr-primary-3);
+}
+.project-name button:focus{
+  outline: none;
+}
+.detail-project{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.detail-project img{
+  width: 90%;
+}
+.detail-project img:hover{
+  box-shadow: var(--dark-shadow);
+}
 
 @media(max-width:800px){
   .section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width:600px){
+  .detail-project {
     display: grid;
     grid-template-columns: 1fr;
   }

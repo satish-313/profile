@@ -1,10 +1,10 @@
 import React from 'react';
-import { FaLinkedin, FaCertificate, FaGlobeAmericas } from 'react-icons/fa';
+import { FaCertificate, FaGlobeAmericas } from 'react-icons/fa';
 
 
 // local import
-import img from '../image/ironman.jpg';
-import { aboutMe, linkedinUrl, skills} from '../data';
+import img from '../image/satish.jpg';
+import { aboutMe, skills} from '../data';
 import LeftContent from './LeftContent';
 
 const SideContent = () => {
@@ -26,8 +26,8 @@ const SideContent = () => {
         </div>
         <div className="skill-log">
           {skills.map((item, index) => {
-            const { link,image, skill } = item;
-            return <LeftContent link={link} icon={image} info={skill} key={index}/>
+            const { link,image, skill,framework } = item;
+            return <LeftContent link={link} icon={image} info={skill} key={index} framework={framework}/>
           })}
         </div>
       </div>
