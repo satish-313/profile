@@ -83,12 +83,36 @@ export const workExperience = [
     duration: 'July-2020 - Ongoing',
     project: [
       {
-        icon: 'https://res.cloudinary.com/dxh1uvmlw/image/upload/v1608821614/project/profile-react_zkdoeb.png', name: "profile react",
-        description: 'Building my profile using ReactJS, CSS3, HTML5, with mobile responsive features also React hooks for interactive.'
+        icon: 'https://res.cloudinary.com/dxh1uvmlw/image/upload/v1609430383/project/todoWithJWTauth_hoj98z.png', name: "Todo app with JWT auth",
+        description: 'Building A simple TODO app or list app using MERN stack. Backend is fuel by NodeJs with all JWT authenticatin system. Front-end is powered by ReactJs and using basic Css styling. The front-end is hosted in netlify and backend in the heroku',
+        link: 'http://todolist313.netlify.app',
+        deploy: 'Backend : heroku & front-end : netlify',
+        tools:'NodeJs,ReactJs',
+        packages: `ExpressJs,Joi,jsonwebtoken,bcrypt,mongoose,cors,React-router-dom,axios,react-icon`
       },
       {
-        icon: 'https://res.cloudinary.com/dxh1uvmlw/image/upload/v1608821715/project/django-project_nhsaea.png', name: "django",
-        description: 'Building a Blog using Django (SQLite) as backend and vanilla JavaScript with Bootstrap as a CSS and Layout. In this app we can perform all CRUD application with all user authentication features. I use View templates and function-based view.'
+        icon: 'https://res.cloudinary.com/dxh1uvmlw/image/upload/v1608821614/project/profile-react_zkdoeb.png', name: "profile react",
+        description: `Building my profile using ReactJS, CSS3, HTML5, with mobile responsive features also React hooks for interactive.`,
+        link: 'https://satish-313.github.io/Profile/',
+        deploy: 'Github Pages',
+        tools:'ReactJs',
+        packages:'react-icon,gh-pages'
+      },
+      {
+        icon: 'https://res.cloudinary.com/dxh1uvmlw/image/upload/v1608821715/project/django-project_nhsaea.png', name: "Blog using Django",
+        description: 'Building a Blog using Django (SQLite) as backend and vanilla JavaScript with Bootstrap as a CSS and Layout. In this app we can perform all CRUD application with all user authentication features. I use View templates and function-based view.',
+        link: 'http://satish313.pythonanywhere.com/',
+        deploy: 'Pythonanywhere.com',
+        tools:'Python',
+        packages:'Django,pillow,django-ckeditor'
+      },
+      {
+        icon: 'https://res.cloudinary.com/dxh1uvmlw/image/upload/v1609430367/project/Hangman_vggnkt.png', name: "HangMan game",
+        description: 'Building the hangman game using ReactJs. For these I used all type of data structure like Set(for unique typed letter), Array and string.',
+        link: 'https://satish-313.github.io/HangManGame/',
+        deploy: 'Github pages',
+        tools:'ReactJs',
+        packages:'react-icon'
       },
     ]
   },
@@ -97,9 +121,11 @@ export const workExperience = [
     icon: <FaCalendarAlt />,
     duration: 'July-2020 - Ongoing',
     project: [
-      { icon: 'https://res.cloudinary.com/dxh1uvmlw/image/upload/v1608818009/project/profile_d32irw.png', name: "profile" ,
-        description:'Building my profile using raw html and css. For layout used flex and grid features. For mobile responsive used the @media query for more control over layout.'
-    },
+      {
+        icon: 'https://res.cloudinary.com/dxh1uvmlw/image/upload/v1608818009/project/profile_d32irw.png', name: "profile",
+        description: 'Building my profile using raw html and css. For layout used flex and grid features. For mobile responsive used the @media query for more control over layout.',
+        link: 'https://satish-313.github.io/'
+      },
     ]
   },
   {

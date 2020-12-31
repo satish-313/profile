@@ -106,8 +106,9 @@ nav h3 {
 .name {
   position: absolute;
   bottom: 15px;
-  left: 15px;
-  color: var(--clr-dark);
+  left: 20px;
+  font-size: 1.5rem;
+  color: black;
 }
 
 .about-me {
@@ -118,7 +119,7 @@ nav h3 {
   display: flex;
 }
 .about-me .left-flex-item .left-flex{
-  align-self: center;
+  display: flex;
 }
 .left-flex i {
   font-size: 1.75rem;
@@ -155,10 +156,13 @@ nav h3 {
 }
 .skill-log .left-flex-item {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
-}
 
+}
+.skill-log .left-flex-item .left-flex{
+  display: flex;
+}
 .skill-log .left-flex-item .left-flex img{
   height: 40px;
   width: 40px;
@@ -173,6 +177,9 @@ nav h3 {
   font-size: 1.25rem;
   border-radius: 50%;
   cursor: pointer;
+}
+.plus-minus-button{
+  margin-top: 3px;
 }
 .skill-log .left-flex-item button:focus{
   outline: none;
@@ -229,6 +236,9 @@ nav h3 {
   font-weight: bold;
   font-size: 1.5rem;
 }
+.work-container > div{
+  padding-top: 1rem;
+}
 .work-container p{
   font-size: 1.25rem;
 }
@@ -254,6 +264,8 @@ nav h3 {
   margin-top:-1rem ;
 }
 
+
+/* project section */
 .project-name button{
   margin: 0 1rem;
   cursor: pointer;
@@ -264,6 +276,7 @@ nav h3 {
   border-radius: var(--radius);
   color: var(--clr-white);
   font-size: 1rem;
+  margin-bottom: 1rem ;
 }
 .project-name button:hover{
   background-color: var(--clr-primary-3);
@@ -274,12 +287,41 @@ nav h3 {
 .detail-project{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  box-shadow: var(--dark-shadow);
 }
-.detail-project img{
-  width: 90%;
+.project-photo img{
+  margin: 1rem auto;
+  height: 15rem;
+  width: 15rem;
+  object-fit: cover;
 }
 .detail-project img:hover{
   box-shadow: var(--dark-shadow);
+}
+.project-photo {
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--card);
+  border-radius: var(--radius);
+}
+.project-photo a {
+  margin: 1rem auto;
+  padding: 1rem;
+  color: var(--clr-white);
+  border-radius: 0.75rem;
+  background-color: var(--clr-grey-3);
+  font-weight: bold;
+}
+.project-photo a:hover{
+  color: var(--clear-pink);
+}
+.project-description {
+  padding: 1rem;
+  border-radius: var(--radius);
+}
+.project-description p {
+  font-size: 1rem;
+  padding: 10px 0;
 }
 
 @media(max-width:800px){

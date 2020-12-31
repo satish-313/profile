@@ -15,9 +15,13 @@ const Projects = ({project}) => {
       <div className="detail-project">
         <div className="project-photo">
           <img src={jobs[value].icon} alt={jobs[value].name}/>
+          <a target="_blank" href={jobs[value].link}>site link click for more</a>
         </div>
         <div className="project-description">
-          {jobs[value].description}
+          <p><strong>Overview</strong>: {jobs[value].description}</p>
+          <p><strong>Tools</strong>: {jobs[value].tools}</p>
+          <p><strong>packages</strong>: {jobs[value].packages}</p>
+          <p><strong>Delpoyed</strong>: {jobs[value].deploy}</p>
         </div>
       </div>
     </div>

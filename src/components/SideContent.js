@@ -38,6 +38,7 @@ const SideContent = () => {
         </div>
         <p>English</p>
         <p>Hindi</p>
+        <p>Odia</p>
       </div>
     </div>
   )
