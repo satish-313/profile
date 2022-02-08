@@ -3,7 +3,7 @@ import { FaCertificate, FaGlobeAmericas } from 'react-icons/fa';
 
 
 // local import
-import img from '../image/satish.jpg';
+import img from '../image/satish.png';
 import { aboutMe, skills} from '../data';
 import LeftContent from './LeftContent';
 
